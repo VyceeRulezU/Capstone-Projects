@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.05rem;
+}
+
+.section-1{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1{
+    width: 70%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    border-radius: 0.8rem;
+    border-width: 2px;
+    border-color: #F7F7F8;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.revenue{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    flex: 1 1;
+    border: solid;
+    border-width: 0px;
+    border-color: #F7F7F8;
+}
+
+.rev{
+    font-size: 1rem;
+    color: #B4ADA8;
+    font-weight: 400;
+}
+
+.per1{
+    font-size: 0.8rem;
+    color: #E95B73;
+}
+
+.overdue{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    flex: 1 1;
+    border: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #F7F7F8;
+}
+
+.over{
+    font-size: 1rem;
+    color: #B4ADA8;
+    font-weight: 400;
+}
+
+.per2{
+    font-size: 0.8rem;
+    color: #E95B73;
+}
+
+.outstanding{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    flex: 1 1;
+    border: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #F7F7F8;
+}
+
+.out{
+    font-size: 1rem;
+    color: #B4ADA8;
+    font-weight: 400;
+}
+
+.per3{
+    font-size: 0.8rem;
+    color: #716A74;
+}
+
+.expenses{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    flex: 1 1;
+    border: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: #F7F7F8;
+}
+
+.exp{
+    font-size: 1rem;
+    color: #B4ADA8;
+    font-weight: 400;
+}
+
+.per4{
+    font-size: 0.8rem;
+    color: #E95B73;
+}
+
+.amount{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Section 2 CSS */
+
+.section-2{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2{
+    width: 70%;
+    height: auto;
+    background-color: #F3F4F6;
+    padding: 2rem;
+    border: solid;
+    border-radius: 0.8rem;
+    border-color: #F7F7F8;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+
+.sec-2-header{
+    font-weight: 600;
+}
+
+.gen-card-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.card-wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    flex: 1 1;
+    padding: 1.5rem;
+    border: solid;
+    border-radius: 0.8rem;
+    border-width: 1px;
+    border-color: #EBECEE;
+}
+
+.title{
+    font-size: 0.8rem;
+    color: #929295;
+}
+
+.num{
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* color: #5648E5; */
+}
+
+
+/* Section - 3 */
+
+.section-3{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0rem 0.2rem 0rem;
+
+}
+
+.num-from{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.4rem;
+    align-items: center;
+}
+
+.from{
+    font-size: 0.8rem;
+    color: #716A74;
+}
+
+.percentage-wrapper{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.4rem;
+    align-items: center;
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+    background-color: #DCFCE7;
+    border-radius: 1rem;
+}
+
+.percentage-wrapper p{
+    color: #4D7A40;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+
+#arrow-down{
+    color: #E95B73;
+}
+
+#arrow-up{
+    color: #3CCC72;
+}
+
+.percentage-wrapper-red{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.4rem;
+    align-items: center;
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+    background-color: #FEE2E2;
+    border-radius: 1rem;
+}
+
+.percentage-wrapper-red p{
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.num-3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #5648E5;
+}
+
