@@ -67,6 +67,12 @@
     width: 18rem;
 }
 
+.logo:hover{
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+}
+
 .logo img{
     width: 100%;
     height: 100%;
@@ -383,6 +389,10 @@
     overflow: hidden;
 }
 
+.ai-cards:hover{
+    box-shadow: 0px 4px 4px 4px rgba(68, 68, 68, 0.10);
+}
+
 .ai-img{
     height: 25rem;
     background-image: url(./images/image\ 3.png);
@@ -475,6 +485,10 @@
     border-radius: 0.6rem;
     border-color: #DEDEDE;
     border-width: 1px;
+}
+
+.link-card:hover{
+    box-shadow: 0px 4px 4px 4px rgba(68, 68, 68, 0.10);
 }
 
 .logo-header{
@@ -591,6 +605,10 @@
     text-decoration: underline;
 }
 
+.footer-link-text:hover{
+    color: #3181EA;
+}
+
 .privacy-container{
     display: flex;
     flex-direction: row;
@@ -666,6 +684,9 @@
 
     .mobile-menu{
         display: flex;
+        padding: 0.6rem;
+        border-radius: 0.4rem;
+        background-color: hsla(0, 0%, 100%, 0.05);
     }
 
     .header h1{
@@ -747,8 +768,26 @@
     }
 
     .alt-ai-cards{
+        height: fit-content;
         flex-direction: column;
         row-gap: 1rem;
+    }
+
+    .ai-header{
+        padding: 1rem;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .alt-header p{
+        width: 100%;
+    }
+
+    .ai-footer{
+        width: 100%;
+        height: fit-content;
+        flex-direction: row;
+        justify-content: end;
     }
 
     .other-ai-cards{
