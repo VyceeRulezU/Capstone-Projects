@@ -7,3 +7,22 @@
     font-family: "Inter", "sans-serif";
     letter-spacing: -0.031rem;
 }
+
+.noisemakers_section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.listofnames{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10rem 2rem 1rem;
+    row-gap: 1rem;
+    border: solid;
+    border-radius: 1rem;
+    border-width: 1px;
+}

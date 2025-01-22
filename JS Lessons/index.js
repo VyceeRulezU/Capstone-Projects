@@ -266,3 +266,257 @@ Object.entries(africanCountries).forEach(([index, data]) => {
   Tourism: ${data.tourism}
   `);
 });
+
+
+const marketPrice = [
+  {
+      nameOfItem: "Soap",
+      oldPrice: 15,
+      newPrice: 25,
+  },
+  {
+      nameOfItem: "Drink",
+      oldPrice: 15,
+      newPrice: 25,
+  },
+  {
+      nameOfItem: "Bread", 
+      oldPrice: 10,
+      newPrice: 20,
+  }
+];
+
+
+for (let x = 0; x < marketPrice.length; x++) {
+  let store = marketPrice[x];
+  
+  let oldPrice = store.oldPrice;
+  let newPrice = store.newPrice;
+  let nameOfItem = store.nameOfItem;
+  let difference = newPrice - oldPrice;
+  
+  
+  console.log(`
+  Item ${x + 1}: ${nameOfItem}
+  The Old Price is $${oldPrice} and the new price is $${newPrice}
+  Price Increase: $${difference}
+  -------------------------`);
+}
+
+
+const donors = [
+  {
+    dName: "Lindsay Lohan",
+    dAmount: 10000,
+  },
+  {
+    dName: "Andrew Yung",
+    dAmount: 5000,
+  },
+  {
+    dName: "Micheal Paul",
+    dAmount: 100000,
+  },
+];
+
+donors.forEach(function(donor) {
+  let donorName = donor.dName;
+  let message = `Thank You ${donorName} for your generous donation.`;
+  console.log(message);
+});
+
+let returnedData = donors.map(function(item) {
+  let donorName = item.dName;
+  return `${donorName}`;
+});
+
+console.log(returnedData);
+
+
+const products = [
+  {
+    itemName: "Laptops",
+    price: 2000,
+  },
+  {
+    itemName: "Phone",
+    price: 500,
+  },
+  {
+    itemName: "Tablets",
+    price: 700,
+  },
+];
+
+const increasedPrices = products.map((product) => ({
+  itemName: product.itemName,
+  price: parseFloat((product.price * 1.1).toFixed(2)),
+}));
+
+console.log(increasedPrices);
+
+const studentsRec = [
+  {
+    name : "Eunice",
+    score : 85
+  },
+
+  {
+    name : "Bob",
+    score : 42
+  },
+
+  {
+    name : "Charles",
+    score : 68
+  }
+]
+
+const passedStudents = studentsRec.filter(function(stud){
+  return stud.score >= 50
+})
+
+console.log(passedStudents);
+
+// Nsted Arrays
+
+const firstArray = [1,2,3,4,5]
+const secondArray = [6,7,8,9,10]
+
+const arrayNest = [firstArray, secondArray]
+
+// locating data from an array nest
+
+let nestResult = arrayNest [0][3]
+
+console.log(nestResult)
+
+// Merging Arrays
+
+const mergedArray = [...firstArray,...secondArray]
+console.log(mergedArray)
+
+// Destructuring Arrays
+
+const names = ["Joseph", "Ben", "Ken"]
+const [firstname, secondName, thirdName] = names
+
+console.log(secondName)
+
+// Destructuring Part 2
+
+const [firstName, ...remainingName] = names
+console.log(remainingName)
+console.log(firstName)
+
+// Destructuring Object Literals
+
+const personTest = {
+  nameTest : "Alice",
+  age : 25,
+  city : "New york"
+}
+
+
+// Sorting
+
+const {nameTest, ...newDetails} = personTest
+console.log(nameTest)
+console.log(newDetails)
+
+
+const namesSort = ["John", "Anna", "Zoe", "Bob"]
+namesSort.sort()
+console.log(namesSort)
+
+
+const ageSort = [
+  {
+    user : "John",
+    userAge : 25
+  }, 
+  
+  {
+    user : "Anna",
+    userAge : 20
+  }, 
+  
+  {
+    user : "Zoe",
+    userAge : 15
+  }, 
+  
+  {
+    user : "Bob",
+    userAge : 35
+  
+  }]
+
+  ageSort.sort((a, b)=>{
+    return a.userAge - b.userAge
+  })
+
+
+console.log(ageSort, "Vycee Sorted this")
+
+// JSON (JavaScript Objuect Notation)
+
+// To get an element from html in javascript
+
+let title = document.getElementById("title")
+console.log(title)
+
+// let header = document.querySelector("#header")
+// header.textContent = `Victor Ironali`
+// console.log(header)
+
+
+// // To edit HTML on the browser
+
+// let weather = `warm`
+
+// if (weather === "warm"){
+//   header.textContent = `The Weather is Warm`
+// } 
+// console.log(header)
+
+// let textPara = document.getElementsByClassName("text")
+// console.log(textPara)
+
+// let button = document.getElementsByTagName("button")
+// console.log(button)
+
+// // querySelector 
+// // QuerySelector can use Class Names and ID to retrieve elements
+// let textPara2 = document.querySelector(".text")
+// console.log(textPara2)
+
+// // Modifying Element and Changing element
+
+// let header = document.getElementById("header")
+
+// // Adding, Removing and Manipulating Attributes
+// header.classList.add("victor")
+// header.classList.remove("victor")
+
+// header.setAttribute("class", "22")
+
+
+
+let namesContainer = document.getElementById("names-container")
+
+const namesOfNoiseMakers = [
+  "Andrew",
+  "John",
+  "Lindsay",
+  "Mary",
+  "Bose",
+  "Paul"
+]
+
+namesOfNoiseMakers.forEach((noiseMakerName)=>{
+  let paragraph = document.createElement("p")
+  paragraph.textContent = noiseMakerName
+  namesContainer.append(paragraph)
+
+});
