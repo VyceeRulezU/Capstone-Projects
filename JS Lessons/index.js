@@ -520,3 +520,10 @@ namesOfNoiseMakers.forEach((noiseMakerName)=>{
   namesContainer.append(paragraph)
 
 });
+
+// Events
+
+let button = document.getElementById("click-me")
+button.addEventListener("click", function(){
+  console.log("Victor Ironali")  
+});
