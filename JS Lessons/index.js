@@ -527,3 +527,42 @@ let button = document.getElementById("click-me")
 button.addEventListener("click", function(){
   console.log("Victor Ironali")  
 });
+
+// Counter in JS
+
+let countValue = document.getElementById("count")
+let increaseButton = document.getElementById("increase")
+let decreaseButton = document.getElementById("decrease")
+let resetButton = document.getElementById("reset")
+
+let count = 0
+increaseButton.addEventListener("click", function(){
+  count += 1 
+  countValue.textContent = count
+})
+
+decreaseButton.addEventListener("click", function(){
+    count -= 1
+    countValue.textContent = count
+})
+
+resetButton.addEventListener("click", function(event){
+    count = 0
+    countValue.textContent = count
+    console.log(event)
+})
+
+
+// form data collection
+
+let form = document.getElementById("form")
+let fullNameInput = document.getElementById("fullname")
+let heading = document.getElementById("username")
+
+form.addEventListener("submit", function(event){
+  event.preventDefault() 
+  let userFullName = fullNameInput.value
+  heading.textContent = userFullName
+
+  form.reset()
+})
