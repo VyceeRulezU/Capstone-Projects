@@ -553,16 +553,16 @@ resetButton.addEventListener("click", function(event){
 })
 
 
-// form data collection
+// // form data collection
 
-let form = document.getElementById("form")
-let fullNameInput = document.getElementById("fullname")
-let heading = document.getElementById("username")
+// let form = document.getElementById("form")
+// let fullNameInput = document.getElementById("fullname")
+// let heading = document.getElementById("username")
 
-form.addEventListener("submit", function(event){
-  event.preventDefault() 
-  let userFullName = fullNameInput.value
-  heading.textContent = userFullName
+// form.addEventListener("submit", function(event){
+//   event.preventDefault() 
+//   let userFullName = fullNameInput.value
+//   heading.textContent = userFullName
 
-  form.reset()
-})
+//   form.reset()
+// })
